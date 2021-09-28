@@ -1,0 +1,108 @@
+*{
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #c32a41 !important;
+}
+
+@keyframes slideUp{
+
+  0%{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%{
+
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#menu{
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#menu form{
+
+  background-color: #fef7e9;
+  padding: 30px;
+  margin-top: 20px;
+  text-align: left;
+  border-radius: 10px;
+  /*width: 50vw;*/
+  animation: slideUp ease 2s;
+}
+
+#menu form #handling{
+
+  display: inline-block;
+}
+
+#menu form #handling input{
+
+  margin-left: 3px;
+  margin-right: 5px;
+}
+
+#menu form #order{
+
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column;
+}
+
+#menu form #order input[type = text], input[type = email], input[type = tel],
+input[type = number]{
+
+  width: 100%;
+  padding: 5px 10px 5px;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+
+}
+
+#menu form #order input[type = submit]{
+
+  padding: 14px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #c32a41;
+  color: #fef7e9 !important;
+  cursor: pointer;
+}
+
+#menu #confirmation{
+
+  background-color: #fef7e9;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 20px;
+  text-align: center;
+  display: none;
+  animation: slideUp ease 2s;
+}
+
+#menu #confirmation h4{
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 460px){
+
+  #menu form{
+
+    margin: 10px 10px 10px 10px;
+  }
+
+  #menu #confirmation{
+
+    margin: 10px 10px 10px 10px;
+  }
+}
